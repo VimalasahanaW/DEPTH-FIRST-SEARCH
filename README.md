@@ -53,6 +53,18 @@ As we can see that every neighbours of node 4 are visited, so move to the next n
 
 Remove node 4 from the front of queue and visit the unvisited neighbours and push them into queue.
 Now, Queue becomes empty, So, terminate these process of iteration.
+<hr>
+<h2>Algorithm:</h2>
+<hr>
+<ol>
+  <li>Construct a Graph with Nodes and Edges</li>
+ <li>Breadth First Uses Queue and iterates through the Queue for Traversal.</li>
+  <li>Insert a Start Node into the Queue.</li>
+<li>Find its Successors Or neighbors and Check whether the node is visited or not.</li>
+<li>If Not Visited, add it to the Queue. Else Continue.</li>
+<li>Iterate steps 4 and 5 until all nodes get visited, and there are no more unvisited nodes.</li>
+
+</ol>
 
 ## Program:
 ```
@@ -86,19 +98,6 @@ visited = defaultdict(bool)
 traversedpath = bfs(graph, start, visited, path)
 print(traversedpath)
 ```
-<hr>
-<h2>Algorithm:</h2>
-<hr>
-<ol>
-  <li>Construct a Graph with Nodes and Edges</li>
- <li>Breadth First Uses Queue and iterates through the Queue for Traversal.</li>
-  <li>Insert a Start Node into the Queue.</li>
-<li>Find its Successors Or neighbors and Check whether the node is visited or not.</li>
-<li>If Not Visited, add it to the Queue. Else Continue.</li>
-<li>Iterate steps 4 and 5 until all nodes get visited, and there are no more unvisited nodes.</li>
-
-</ol>
-
 <hr>
 <h3>Sample Input</h3>
 <hr>
